@@ -1,0 +1,62 @@
+# Получить код подтвеждеия
+POST http://127.0.0.1/api/v1/auth/signup/
+Content-Type: application/json
+
+{
+"email": "a@aa.aa",
+"username": "user"
+}
+###
+
+POST http://127.0.0.1/api/v1/auth/token/
+Content-Type: application/json
+
+{
+"username": "user",
+"confirmation_code": "5zh-3bffac42bf61630dcf6d"
+}
+###
+
+GET http://127.0.0.1/api/v1/users/me/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ4NjQzMjExLCJqdGkiOiIyMjgyMTkzNjEyOGQ0ZDIxODI1YjEzMjQzYmIyYjJjNyIsInVzZXJfaWQiOjF9.JsEb3TNAtPe499nmD9c1eQiJ_V-jr-DFwc42CbWiwNM
+###
+
+
+POST http://127.0.0.1:8000/api/v1/titles/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ3MjQzNzg1LCJpYXQiOjE2NDcxNTczODUsImp0aSI6IjBlMWM3YThlMzRhNzRjZGRhZTcyNjZkNzFmMDExMGY4IiwidXNlcl9pZCI6MX0.5Sq1gNAjDxdvXqEC8Bh38XOlKsi5xk0fuUrTchVx3U0
+Content-Type: application/json
+
+{
+"name": "Название",
+"year": 1234,
+"genre": ["aaa"],
+"description": "Описание",
+"category": "rrr"
+}
+###
+
+
+aaa
+rrr
+
+
+
+
+
+
+
+
+
+GET http://127.0.0.1:8000/api/v1/users/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ2MjYwMzQxLCJpYXQiOjE2NDYxNzM5NDEsImp0aSI6IjVhMGIxZGM4ZWUwOTRkZDNiYWY1Y2QxYTZjNWViMDVjIiwidXNlcl9pZCI6Mn0.YFAUsabgTmNp9WYQPPEYcBibGe72AgpMLbEJKkF2ieI
+###
+
+POST http://127.0.0.1:8000/api/v1/users/
+Authorization: Bearer eayJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ2MjYwMzQxLCJpYXQiOjE2NDYxNzM5NDEsImp0aSI6IjVhMGIxZGM4ZWUwOTRkZDNiYWY1Y2QxYTZjNWViMDVjIiwidXNlcl9pZCI6Mn0.YFAUsabgTmNp9WYQPPEYcBibGe72AgpMLbEJKkF2ieI
+Content-Type: application/json
+
+{
+"email": "aaa2@aa.aa",
+"username": "user2"
+}
+###
