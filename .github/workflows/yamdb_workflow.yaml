@@ -60,6 +60,7 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             sudo docker pull atuktanov/yamdb_final
+            cd /home/${{ secrets.USER }}/app
             sudo docker-compose stop
             sudo docker-compose rm web
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} > .env
