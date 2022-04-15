@@ -1,6 +1,7 @@
 # YaMDb_api
 ![yamdb_final workflow](https://github.com/atuktanov/yamdb_final/workflows/yamdb_final_workflow/badge.svg)
 ## _RESTful API для проекта YaMDb_
+Боевой сервер доступен по адресу: http://atuktanov.ddns.net/
 
 > YaMDb это интернет-сервис, где каждый может оставить свой отзыв на книгу,
 кино, музыку. Пользователи могут поделиться впечатлениями и обсудить отзыв
