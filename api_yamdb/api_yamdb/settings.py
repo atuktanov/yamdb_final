@@ -132,3 +132,5 @@ EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'sent_emails')
 
 DEFAULT_DOMAIN = 'yamdb.com'
 DEFAULT_FROM_EMAIL = f'api@{DEFAULT_DOMAIN}'
+
+USE_X_FORWARDED_HOST = True
