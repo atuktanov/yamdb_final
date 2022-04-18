@@ -57,7 +57,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            # sudo docker pull atuktanov/yamdb_final
+            sudo docker pull atuktanov/yamdb_final
             sudo docker-compose stop
             sudo docker-compose rm -f web nginx
             sudo docker volume rm atuktanov_static_value
