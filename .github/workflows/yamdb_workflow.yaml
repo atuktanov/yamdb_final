@@ -53,9 +53,13 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
+          # username: ${{ secrets.USER }}
+          # key: ${{ secrets.SSH_KEY }}
+          # passphrase: ${{ secrets.PASSPHRASE }}
+          host: atuktanov.ddns.net
+          username: atuktanov
           key: ${{ secrets.SSH_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
+          passphrase: lolatuktanoid715
           script: |
             sudo docker pull atuktanov/yamdb_final
             sudo docker-compose stop
