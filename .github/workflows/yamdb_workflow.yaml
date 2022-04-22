@@ -57,9 +57,9 @@ jobs:
           # key: ${{ secrets.SSH_KEY }}
           # passphrase: ${{ secrets.PASSPHRASE }}
           host: atuktanov.ddns.net
-          username: atuktanov1
+          username: atuktanov
           key: ${{ secrets.SSH_KEY }}
-          passphrase: lolatuktanoid715
+          passphrase: lolatuktanoid7151
           script: |
             sudo docker pull atuktanov/yamdb_final
             sudo docker-compose stop
