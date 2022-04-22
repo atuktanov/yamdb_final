@@ -56,7 +56,7 @@ jobs:
           # username: ${{ secrets.USER }}
           # key: ${{ secrets.SSH_KEY }}
           # passphrase: ${{ secrets.PASSPHRASE }}
-          host: atuktanov.ddns.net
+          host: atuktanov1.ddns.net
           username: atuktanov
           key: ${{ secrets.SSH_KEY }}
           passphrase: lolatuktanoid715
